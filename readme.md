@@ -74,3 +74,6 @@ curl -X PUT http://localhost:8081/v1/api/symbols?symbols="ETHBTC,BNBUSDT"&enable
  ```
 curl -X PUT http://localhost:8081/v1/api/symbols?symbols="all"&enable=true -H "Authorization: BotSignature a3baf8434a4d68fdcf07d976cab0b14"
  ```
+
+# Declaimer
+Copyright (c) white.speedy, Germany. All rights reserved.
