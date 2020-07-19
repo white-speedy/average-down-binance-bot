@@ -54,25 +54,25 @@ Pair defines configuration for trading symbols. The configuration requires
 
  Example:
  ```
- curl -X GET http://localhost:8081/v1/api/symbols -H "Authorization: BotSignature jjhgkjhg987956720529t828870278002"
+ curl -X GET  -H "Authorization: BotSignature jjhgkjhg987956720529t828870278002" "http://localhost:8081/v1/api/symbols"
  ```
 * List symbols
 
  Example:
  ```
-curl -X GET http://localhost:8081/v1/api/symbols -H "Authorization: BotSignature a3baf8434a4d68fdcf07d976ca64d849f1441b0b14"
+curl -X GET -H "Authorization: BotSignature a3baf8434a4d68fdcf07d976ca64d849f1441b0b14" "http://localhost:8081/v1/api/symbols"
  ```
 * Enable/Disable trading on one or more symbols
 
  Example:
  ```
-curl -X PUT http://localhost:8081/v1/api/symbols?symbols="ETHBTC,BNBUSDT"&enable=true -H "Authorization: BotSignature a3baf8434a4d68fdcf07d976ca64d849f1e4c1441b0b14"
+curl -X PUT -H "Authorization: BotSignature a3baf8434a4d68fdcf07d976ca64d849f1e4c1441b0b14" "http://localhost:8081/v1/api/symbols?symbols=ETHBTC,BNBUSDT&enable=true"
  ```
 * Enable/Disable trading on all symbols
 
  Example:
  ```
-curl -X PUT http://localhost:8081/v1/api/symbols?symbols="all"&enable=true -H "Authorization: BotSignature a3baf8434a4d68fdcf07d976cab0b14"
+curl -X PUT -H "Authorization: BotSignature a3baf8434a4d68fdcf07d976cab0b14" "http://localhost:8081/v1/api/symbols?symbols=all&enable=true"
  ```
 
 # Declaimer
