@@ -35,6 +35,13 @@ Pair defines configuration for trading symbols. The configuration requires
 * panic-loss -
 
 ### Run Configuration
+> Coming soon
+>
+* Open start.sh script
+* add binance API Key and Binance Secret Key
+* If the specified port is unse you can also change the http port
+* Save your changes
+
 ## Installation
 * Download the content of the repository
 * Setup your symbols and base assets in the config/application.properties file
