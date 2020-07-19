@@ -28,8 +28,31 @@ Targets are base assets, They define limit for buy order and max concurrent trad
 If for examples the concurrent trades number is set to 2 then only two symbols for the same base asset can be handle at the same time.
 #### Allowed pairs
 Pair defines configuration for trading symbols. The configuration requires
-* event-interval -
-* profit -
+* event-interval - Kline/Candlestick chart intervals (m -> minutes; h -> hours; d -> days; w -> weeks; M -> months)
+  * 1m
+  * 3m
+  * 5m
+  * 15m
+  * 30m
+  * 1h
+  * 2h
+  * 4h
+  * 6h
+  * 8h
+  * 12h
+  * 1d
+  * 3d
+  * 1w
+  * 1M
+
+* profit - sell order price calculation factor (in percent %). The sell price is calculated by the formula: (average buy price * profit)
+
+ Example:
+ ```
+ Given buy 1: 10 coins by price 20, buy 2: 8 coins by price 10 the profit = 2  
+  Average buy price: (10*20 + 8*10)/(10+8) = 15.55 
+  Sell Price is then 15.55 * 1.02 = 15,87 per coin
+ ```
 * loss -
 * loss-multiplier -
 * panic-loss -
