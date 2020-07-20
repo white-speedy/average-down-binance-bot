@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Please enter your binance api and secret keys
-export API_KEY="your bnance api key"
-export API_SECRET="your bnance secret key"
+export API_KEY="your binance api key"
+export API_SECRET="your binance secret key"
 
 export PORT="8081"
 export BOT_HOME=".bot"
