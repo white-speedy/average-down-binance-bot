@@ -20,6 +20,15 @@ The average-down loss factor is calculated by the formula: (configured loss perc
  ```
 When both panic-loss and average-down are valid then panic-loss will be taken.
 
+## System Requirements
+* Hardware
+  * 4G RAM
+  * 2 Core
+  * 5G Free Space
+* Software
+  * OS: Linux or Windows
+  * Java 14 or newer
+
 ## Configuration
 ### Trade Configuration
 Use config/application.properties file to setup bot trading. There are two main setup parts.
